@@ -36,7 +36,7 @@
         </ul>
       </div>
       <div class="navbar-end">
-        <input type="text" placeholder="Type here" class="input input-bordered w-65 max-w-xs" />
+        <input type="text" id="searchInput" placeholder="Type here" class="input input-bordered w-65 max-w-xs" />
       </div>
     </div>
     
@@ -67,8 +67,8 @@
         <div class="border-line"></div>
           <!-- search cocktail section start -->
           <div class=" text-center cocktailsearch">
-            <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs" />
-            <button class="btn  bg-red-500 text-white">Search</button>
+            <input id="searchInput" type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs" />
+            <button id="search-btn" onclick="theCocktailDB()" class="btn  bg-red-500 text-white">Search</button>
             <div class="text-white gap-4 text-2xl justify-center mt-3 flex text-center">
                <p> <i class="gap-2 fa-solid fa-martini-glass-empty"></i>Total Drinks: 635 </p>
                <p> <i class="fa-sharp fa-solid fa-moon"></i>Total Ingredients: 489 </p>
@@ -90,6 +90,39 @@
            </div>
 
             <div class="border-line"></div>
+    </section>
+    <!-- Popular Ingredients --- -->
+      <section class="container mx-auto text-center mt-8 mb-8">
+        <h1 class="text-center text-6xl text-white">Popular Ingredients</h1>
+        <div class="grid text-center lg:grid-cols-4 gap-4 md:grid-cols-3 mt-8 ">
+            <div>
+              <img src="./img/Vodka.png" alt="">
+              <h1 class="text-yellow-500 text-4xl">Vodka</h1>
+            </div>
+            <div>
+              <img src="./img/Rum.png" alt="">
+              <h1 class="text-yellow-500 text-4xl">Rum</h1>
+            </div>
+
+            <div>
+              <img src="./img/Gin.png" alt="">
+              <h1 class="text-yellow-500 text-4xl">Gin</h1>
+            </div>
+
+            <div>
+              <img src="./img/Tequila.png" alt="">
+              <h1 class="text-yellow-500 text-4xl">Tequila</h1>
+            </div>
+        </div>
+      </section>
+
+      <div class="border-line"></div>
+    <!-- Ingredients section ----- -->
+    <section class="container mx-auto text-center">
+      <h1 class="text-center text-6xl text-white">Ingredients</h1>
+      <div id="ingrediant-container" class="grid text-center lg:grid-cols-4 gap-4 md:grid-cols-3 mt-8">
+
+      </div>
     </section>
   </main>
   <script src="app.js"></script>

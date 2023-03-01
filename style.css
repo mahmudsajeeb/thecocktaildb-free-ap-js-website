@@ -1,0 +1,12 @@
+body{
+  background-color: #230312f8;
+  
+}
+
+.border-line{
+
+  width: 80%;
+  margin:10px auto;
+  border-radius: 30px;
+  border: 2px solid #fff;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The CocktailDB</title>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/d71f19596c.css" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    
+    <nav class="py-3 bg-[#230312]">
+
+    <div class="container mx-auto navbar ">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a class="bg-red-500 text-white	fw-bold">Home</a></li>
+             
+            <li><a>Forum</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl"><img src="./img/logo.png" alt=""></a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a class="bg-red-500 text-2xl text-white	fw-bold">Home</a></li>
+          <li><a class="text-white text-2xl">Forum</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <input type="text" placeholder="Type here" class="input input-bordered w-65 max-w-xs" />
+      </div>
+    </div>
+    
+  </nav>
+  </header>
+  <main>
+    <!-- Welcome to TheCocktailDB  -->
+ 
+    <section class="mt-12">
+        <div class="container  flex mx-auto">
+          <div>
+              <img src="./img/cocktail_left.png" alt="">
+          </div>
+          <div class="center snap-center  text-center text-white">
+              <h1 class="text-6xl mb-4">Welcome to TheCocktailDB</h1>
+              <p class="w-3/5 mx-auto text-1xl">An open, crowd-sourced database of drinks and cocktails from around the world.<i class="fa-solid fa-font-awesome"></i>
+                We also offer a free JSON API for anyone wanting to use it.
+                If you like the site, please consider supporting us on Patreon by clicking the link below...</p>
+                <img  class="mx-auto w-1/5 mt-4 mb-4" src="./img/patreon_logo.png" alt="">
+                <a href="#" class="text-white-200 hover:text-amber-400	">Click to Support: Currently 369 supporters</a>
+          </div>
+          <div>
+            <img src="./img/cocktail_left.png" alt="">
+
+          </div>
+        </div>
+
+        <div class="border-line"></div>
+          <!-- search cocktail section start -->
+          <div class=" text-center cocktailsearch">
+            <input type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs" />
+            <button class="btn  bg-red-500 text-white">Search</button>
+            <div class="text-white gap-4 text-2xl justify-center mt-3 flex text-center">
+               <p> <i class="gap-2 fa-solid fa-martini-glass-empty"></i>Total Drinks: 635 </p>
+               <p> <i class="fa-sharp fa-solid fa-moon"></i>Total Ingredients: 489 </p>
+               <p> <i class="fa-sharp fa-solid fa-wine-bottle"></i>Drink Images: 635(92cc) </p>
+            </div>
+          </div>
+        <div class="border-line"></div> 
+
+    </section>
+    <section>
+          <!-- // popular drinks ------------- -->
+
+   
+           <div class="container mt-8 mb-8 mx-auto">
+               <h1 class="text-center text-6xl text-white">Popular Drinks</h1>
+               <div id="popular-drinks" class="grid text-center lg:grid-cols-4 gap-4 md:grid-cols-3 mt-8">
+                 
+               </div>
+           </div>
+
+            <div class="border-line"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/d71f19596c.js" crossorigin="anonymous"></script>
+</body>
+</html>
